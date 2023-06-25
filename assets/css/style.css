@@ -1,0 +1,125 @@
+:root {
+  --mainColor: #32343E;
+  --secondaryColor: #90C7CD;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background-color: #F1EFF9;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+header {
+  background-color: var(--mainColor);
+  padding: 20px 0;
+}
+header h1 {
+  background-color: var(--secondaryColor);
+  color: var(--mainColor);
+  padding: 0 10px 0 75px;
+  display: inline-block;
+}
+/* needs to have an underline and when it is hovered then the background is over the whole word */
+header nav {
+  padding: 10px 8% 0 0;
+  float: right;
+  font-size: 18px;
+}
+nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+
+}
+
+a {
+  color: var(--secondaryColor);
+  padding: 10px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+  background-image: url("../Images/512CroppedCopy.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -200px;
+}
+
+#wrapper {
+  padding: 5px 8%;
+}
+
+h2 {
+  font-size: 3em;
+  padding-right: 50px;
+}
+
+/* ABOUT ME SECTION */
+#aboutMe {
+  padding-bottom: 25px;
+}
+#aboutMe h2 {
+  float: left;
+  display: flex;
+}
+#aboutMe p {
+  display: flex;
+}
+
+
+/* MY WORK SECTION */
+#myWork {
+  padding: 25px 0;
+}
+#myWork h2 {
+  float: left;
+  display: flex;
+}
+#myWork #workDisplay {
+  display: flex;
+}
+
+
+/* CONTACT ME SECTION */
+#contactMeandResume {
+  padding: 25px 0;
+}
+#contactMeandResume h2 {
+  float: left;
+  display: flex;
+}
+#contactMeandResume nav ul li {
+  display: inline-block;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+
+#contactMeandResume a {
+  display: flex;
+}
+
+
+/* header nav {
+  padding: 10px 8% 0 0;
+  float: right;
+  font-size: 18px;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+} */
+
