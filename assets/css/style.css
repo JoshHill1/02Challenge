@@ -16,12 +16,12 @@ body {
 
 header {
   background-color: var(--mainColor);
-  padding: 20px 0;
+  padding: 10px 0;
 }
 header h1 {
   background-color: var(--secondaryColor);
   color: var(--mainColor);
-  padding: 0 10px 0 75px;
+  padding: 5px 10px 5px 75px;
   display: inline-block;
 }
 /* needs to have an underline and when it is hovered then the background is over the whole word */
@@ -41,9 +41,13 @@ header nav ul li {
 a {
   color: var(--secondaryColor);
   padding: 10px;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
+  border-radius: 4%;
+  text-decoration: underline 15%;
+  transition: .2s ease;
+}
+a:hover {
+  background-color: var(--secondaryColor);
+  color: var(--mainColor);
 }
 
 #hero {
@@ -55,6 +59,17 @@ a {
   background-position-x: center;
   background-position-y: -200px;
 }
+#subT p {
+  font-size: 2em;
+  font-weight: 600;
+  background-color: var(--secondaryColor);
+  text-align: center;
+  width: 15%;
+  padding: 5px 0;
+  position: relative;
+  left: 77%; /* subtract 100 - (width + 8% of padding) */
+  top: 80%;
+}
 
 #wrapper {
   padding: 5px 8%;
@@ -62,64 +77,96 @@ a {
 
 h2 {
   font-size: 3em;
-  padding-right: 50px;
+  padding: 0px 50px 0 0;
+  float: right;
+  display: flex;
 }
 
-/* ABOUT ME SECTION */
-#aboutMe {
-  padding-bottom: 25px;
+.section {
+  padding-top: 50px;
+  display: flex;
 }
-#aboutMe h2 {
+
+/* ABOUT ME <p> */
+.section p {
+  width: 1330px;
+  display: flex;
   float: left;
-  display: flex;
-}
-#aboutMe p {
-  display: flex;
 }
 
 
 /* MY WORK SECTION */
-#myWork {
-  padding: 25px 0;
-}
-#myWork h2 {
+#workDisplay {
+  display: flex;
   float: left;
+  flex-wrap: wrap;
+}
+
+#workDisplay #featuredWork {
+  width: 100%;
   display: flex;
 }
-#myWork #workDisplay {
+#workDisplay #featuredWork a {
+  padding: 0;
+  width: 100%;
+}
+#workDisplay #featuredWork a:hover {
+  background-color: #ffffff00;
+}
+#workDisplay #featuredWork a img {
+  width: 100%;
+}
+
+#workDisplay #otherWork {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#workDisplay #otherWork a {
+  width: 50%;
+}
+#workDisplay #otherWork a img {
+  width: 100%;
 }
 
 
 /* CONTACT ME SECTION */
-#contactMeandResume {
-  padding: 25px 0;
-}
-#contactMeandResume h2 {
-  float: left;
+#contactMeandResume { 
+  padding: 50px 0;
+  margin: 20px 0;
+  height: 154px;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--mainColor);
+}
+#contactMeandResume h2, #navAndDL {
+  display: flex;
+  float: left;
+  justify-content: space-between;
+  margin: 2px 100px;
 }
 #contactMeandResume nav ul li {
   display: inline-block;
   justify-content: center;
   padding: 10px 0;
 }
-
-
 #contactMeandResume a {
-  display: flex;
+  color: var(--secondaryColor);
+  padding: 10px;
+  border-radius: 4%;
+  text-decoration: none;
+  transition: .2s ease;
+}
+#contactMeandResume a:hover {
+  background-color: var(--secondaryColor);
+  color: var(--mainColor);
+}
+
+#navAndDL {
+  width: 50%;
 }
 
 
-/* header nav {
-  padding: 10px 8% 0 0;
-  float: right;
-  font-size: 18px;
-}
-header nav ul {
-  list-style-type: none;
-}
-header nav ul li {
-  display: inline-block;
-} */
+
 
