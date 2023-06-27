@@ -11,10 +11,10 @@
     <h1>Joshua Hill</h1>
     <nav>
       <ul>
-        <li><a href="#">About Me</a></li>
+        <li><a href="#abMe">About Me</a></li>
         <li><a href="#myWork">Work</a></li>
         <li><a href="#contactMe">Contact Me</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contactMe">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -22,15 +22,20 @@
     <div id="hero"><span id="subT"><p>*Cool Subtitle*</p></span></div>
     <div id="wrapper">
       <div class="section">
-        <h2>About Me</h2>
+        <div id="abMe">
+          <h2>About Me</h2>
+        </div>
         <p>My name is Joshua Hill and I am learning HTML, CSS, and JavaScript. I majored in Graphic Information Technology, focused in Full-Stack Web Development. I didn't like how the program was set up so I convinced my parents that taking a gap year was a good idea for me to self-teach myself HTML, CSS, and JavaScript. 
         <br><br>I then signed up for ASU's coding bootcamp where I learned HTML, advanced CSS, Javascript, and other tools to help build a webpage. </p>
       </div>
       <div class="section">
-        <h2>My Work</h2>
-        <div id="workDisplay">
+        <div id="myWork">
+          <h2>My Work</h2>
+        </div>
+        <div id="workDisplay"> <!-- Placeholder Images -->
           <div id="featuredWork">
             <a href="#"><img src="./assets/Images/512CroppedCopy.jpg" alt="img"></a>
+            <div class="bottomLeft"><p>*Title*</p></div>
           </div>
           <div id="otherWork">
             <a href="#"><img src="./assets/Images/512CroppedCopy.jpg" alt="img"></a>
@@ -41,7 +46,9 @@
         </div>
       </div>
       <div id="contactMeandResume">
-        <h2>Contact Me</h2>
+        <div id="contactMe">
+          <h2>Contact Me</h2>
+        </div>
         <div id="navAndDL"> <!-- Use this to have the links next to each other -->
           <nav>
             <ul>
