@@ -8,6 +8,9 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #F1EFF9;
@@ -175,9 +178,6 @@ h2 {
 
 
 /* CONTACT ME SECTION */
-#contactMe {
-  color: #F1EFF9;
-}
 #contactMeandResume { 
   padding: 50px 0;
   margin: 20px 0;
@@ -193,6 +193,7 @@ h2 {
   float: left;
   justify-content: space-between;
   padding: 0;
+  color: #F1EFF9;  /* This is really just to change the color of the h2; all the other elements get their color changed by more specification. */
 }
 #contactMeandResume nav ul li {
   display: inline-block;
@@ -217,6 +218,14 @@ h2 {
 }
 
 
+@media screen and (max-width: 1472px) {
+  #workDisplay #otherWork {
+    width: fit-content;
+  }
+  #navAndDL {
+    width: 70%;
+  }
+}
 
 
 
